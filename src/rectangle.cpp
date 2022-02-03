@@ -11,3 +11,11 @@ void Rectangle::set_height(int h) {
 int Rectangle::area() {
     return this->width * this->height;
 }
+Rectangle::Rectangle(int w, int h) {
+    this->width = w;
+   this->height = h;
+}
+
+int Rectangle::perimeter() {
+    return (2 *(this->height + this->width));
+}
