@@ -19,3 +19,14 @@ Rectangle::Rectangle(int w, int h) {
 int Rectangle::perimeter() {
     return (2 *(this->height + this->width));
 }
+
+int Rectangle::get_width() {
+	return width;
+}
+
+int Rectangle::get_height() {
+	return height;
+}
+
+
+
