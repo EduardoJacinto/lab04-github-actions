@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, azhen016/ci_setup ]
+    branches: [ main, azhen016/failing_tests ]
   pull_request:
     branches: [ main ]
 
@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+     
+      # Run cmake
+      - name: Run cmake
+        run: echo cmake . make
+
+      # Runs unit tests
+      - name: Run unit test
+        run: echo ./test
+ 
