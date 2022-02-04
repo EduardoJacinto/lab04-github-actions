@@ -56,7 +56,7 @@ TEST(PerimeterTests, Perimeter2) {
 
 TEST(PerimeterTests, Perimeter3) {
 	Rectangle r(100,100);
-	int perimRes = r.peimeter();
+	int perimRes = r.perimeter();
 	EXPECT_EQ(perimRes, 400);
 }
 
