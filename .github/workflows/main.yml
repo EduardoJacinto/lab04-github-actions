@@ -37,7 +37,7 @@ jobs:
         # Run cmake
         - name: Run cmake . make
           run: |
-               git submodule update --init recursive
+               git submodule update --init --recursive
                cmake . 
                make
           #Runs unit tests
