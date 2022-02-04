@@ -36,10 +36,10 @@ jobs:
           echo test, and deploy your project.
      
       # Run cmake
-      - name: Run cmake
-        run: echo cmake . make
+      - name: Run cmake . make
+        run: cmake . make
 
       # Runs unit tests
-      - name: Run unit test
-        run: echo ./test
+      - name: Run unit tests
+        run: ./test
  
