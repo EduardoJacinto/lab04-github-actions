@@ -34,12 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-        # Run cmake
-        - name: Run cmake . make
-          run: |
-               git submodule update --init --recursive
-               cmake . 
-               make
-          #Runs unit tests
-          - name: Run Unit tests
-            run: ./test
+      # Run cmake
+      - name: Run cmake . make
+        run: |
+          git submodule update --init --recursive
+          cmake . 
+          make
+      #Runs unit tests
+      - name: Run Unit tests
+        run: ./test
