@@ -22,7 +22,7 @@ TEST(RectangleTests, CheckRectangle3) {
 	EXPECT_EQ(r.get_height(), 100);
 }
 
-TEST(AreaTests, CheckArea2) {
+TEST(AreaTests, CheckArea) {
 	Rectangle r(4,4);
 	int areaRes = r.area();
 	EXPECT_EQ(areaRes, 16);
